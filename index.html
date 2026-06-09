@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Memory Match — Space Edition</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="space-bg">
+    <div class="stars"></div>
+  </div>
+  <div class="scanline"></div>
+
+  <div id="ol"></div>
+
+  <div id="app">
+    <header id="header">
+      <div id="header-left">
+        <div class="stat-pill">
+          <span class="icon">⏱</span>
+          <span id="stat-time">00:00</span>
+        </div>
+        <div class="stat-pill">
+          <span class="icon">🎮</span>
+          <span id="stat-moves">0</span>
+        </div>
+      </div>
+      <div id="title-block">
+        <div id="game-title">MEMORY MATCH</div>
+        <div id="game-subtitle">Space Edition</div>
+      </div>
+      <div id="header-right">
+        <div class="stat-pill purple">
+          <span class="icon">🎯</span>
+          <span id="stat-acc">100%</span>
+        </div>
+        <div class="stat-pill purple">
+          <span class="icon">🔥</span>
+          <span id="stat-diff">—</span>
+        </div>
+      </div>
+    </header>
+
+    <div id="game-body">
+      <aside class="side-panel">
+        <div class="panel-card">
+          <div class="panel-title">⏱ Timer</div>
+          <div class="big-stat" id="side-time">00:00</div>
+          <div class="stat-label">Elapsed time</div>
+        </div>
+        <div class="panel-card">
+          <div class="panel-title">🎮 Moves</div>
+          <div class="big-stat purple" id="side-moves">0</div>
+          <div class="stat-label">Cards flipped</div>
+        </div>
+        <div class="panel-card">
+          <div class="panel-title">🔥 Mode</div>
+          <div class="diff-badge" id="side-diff">—</div>
+        </div>
+      </aside>
+
+      <main id="game-arena">
+        <div id="arena-frame">
+          <div style="display:flex;justify-content:center;">
+            <table cellspacing="0"></table>
+          </div>
+        </div>
+      </main>
+
+      <aside class="side-panel">
+        <div class="panel-card">
+          <div class="panel-title">🎯 Accuracy</div>
+          <div class="accuracy-wrap">
+            <div class="accuracy-val" id="side-acc">100%</div>
+          </div>
+          <div class="stat-label">Correct matches</div>
+        </div>
+        <div class="panel-card">
+          <div class="panel-title">📊 Progress</div>
+          <div class="progress-wrap">
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="progress-fill"></div>
+            </div>
+            <div class="progress-label" id="progress-lbl">0 / 0 pairs</div>
+          </div>
+        </div>
+        <div class="panel-card">
+          <div class="panel-title">💡 Tips</div>
+          <p class="tip-text">Start from corners. Remember positions before flipping a second card.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer id="status-bar">
+      <span><span class="status-dot"></span>SYSTEM ONLINE</span>
+      <span>MEMORY MATCH v2.0</span>
+      <span>© SPACE EDITION</span>
+    </footer>
+  </div>
+
+</body>
+
+</html>
