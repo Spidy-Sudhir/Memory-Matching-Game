@@ -1,1 +1,1 @@
-# Memory-Matching-Game
+Developed a responsive Memory Matching Game using HTML, CSS, and JavaScript featuring card flip animations, matching logic, score/timer system, and engaging UI to enhance user interaction and problem-solving experience.
