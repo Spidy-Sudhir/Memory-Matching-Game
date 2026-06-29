@@ -24,10 +24,10 @@ A fun and interactive Memory Matching Game built using **HTML, CSS, and JavaScri
   <img src="Screenshots/Home.png" alt="Memory Matching Game" width="700">
 </p>
 <p align="center">
-  <img src="Screenshots/Gameplay.png" alt="Memory Matching Game" width="500">
+  <img src="Screenshots/Gameplay.png" alt="Memory Matching Game" width="700">
 </p>
 <p align="center">
-  <img src="Screenshots/Result.png" alt="Memory Matching Game" width="500">
+  <img src="Screenshots/Result.png" alt="Memory Matching Game" width="700">
 </p>
 
 
